@@ -94,6 +94,7 @@ class GCSClient:
 
     @staticmethod
     def get_credentials(config: Config) -> Credentials:
+        
         if config.google_service_account_path:
             return service_account.Credentials.from_service_account_file(
                 config.google_service_account_path
